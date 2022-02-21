@@ -10,6 +10,7 @@ import Animated, {
   withRepeat,
 } from "react-native-reanimated";
 import Interpolate from "./components/Interpolate";
+import Interpolate_Colors from "./components/Interpolate_Colors";
 import PanGes from "./components/PanGes";
 
 export default function App() {
@@ -40,8 +41,11 @@ export default function App() {
     // Pan Gesture Handler
 
     <GestureHandlerRootView style={styles.forpan}>
-      <StatusBar style="light" />
-        <PanGes/>
+      <StatusBar style="auto" />
+        {/* <PanGes/> */}
+
+        {/* Interpolate Colors */}
+        <Interpolate_Colors/>
     </GestureHandlerRootView>
 
 
