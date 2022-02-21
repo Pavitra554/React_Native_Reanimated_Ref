@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -9,12 +10,12 @@ import Animated, {
   withRepeat,
 } from "react-native-reanimated";
 import Interpolate from "./components/Interpolate";
+import PanGes from "./components/PanGes";
 
 export default function App() {
   const progress = useSharedValue(1);
   const scale = useSharedValue(1);
   const deg = useSharedValue(0);
-  const color: any = useSharedValue("#7A0BC0");
 
   const rStyle = useAnimatedStyle(() => {
     return {
@@ -36,15 +37,21 @@ export default function App() {
     //   <Animated.View style={[styles.box, rStyle]} />
     // </View>
 
+    // Pan Gesture Handler
 
-
+    <GestureHandlerRootView style={styles.forpan}>
+      <StatusBar style="light" />
+        <PanGes/>
+    </GestureHandlerRootView>
 
 
     //interpolate
-    <>
-     {/* <StatusBar style="auto" /> */}
-      <Interpolate/>
-      </>
+    // <>
+    //  {/* <StatusBar style="dark" /> */}
+    //   <Interpolate/>
+    //   </>
+
+
   );
 }
 
@@ -65,4 +72,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 50,
   },
+  forpan:{
+    flex:1
+  }
 });
