@@ -9,6 +9,7 @@ import Animated, {
   withSpring,
   withRepeat,
 } from "react-native-reanimated";
+import DoubleTap_Like from "./components/DoubleTap_Like";
 import Interpolate from "./components/Interpolate";
 import Interpolate_Colors from "./components/Interpolate_Colors";
 import PanGes from "./components/PanGes";
@@ -50,7 +51,12 @@ export default function App() {
 
 
         {/*Pinch Gesture Handler*/}
-        <PinchGes/>
+        {/* <PinchGes/> */}
+
+        {/*DoubleTap like Instagram */}
+        <DoubleTap_Like/>
+        
+
 
         
     </GestureHandlerRootView>
