@@ -12,6 +12,7 @@ import Animated, {
 import Interpolate from "./components/Interpolate";
 import Interpolate_Colors from "./components/Interpolate_Colors";
 import PanGes from "./components/PanGes";
+import PinchGes from "./components/PinchGes";
 
 export default function App() {
   const progress = useSharedValue(1);
@@ -45,7 +46,13 @@ export default function App() {
         {/* <PanGes/> */}
 
         {/* Interpolate Colors */}
-        <Interpolate_Colors/>
+        {/* <Interpolate_Colors/> */}
+
+
+        {/*Pinch Gesture Handler*/}
+        <PinchGes/>
+
+        
     </GestureHandlerRootView>
 
 
