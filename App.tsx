@@ -14,6 +14,7 @@ import Interpolate from "./components/Interpolate";
 import Interpolate_Colors from "./components/Interpolate_Colors";
 import PanGes from "./components/PanGes";
 import PinchGes from "./components/PinchGes";
+import Sview from "./components/Sview";
 
 export default function App() {
   const progress = useSharedValue(1);
@@ -54,7 +55,11 @@ export default function App() {
         {/* <PinchGes/> */}
 
         {/*DoubleTap like Instagram */}
-        <DoubleTap_Like/>
+        {/* <DoubleTap_Like/> */}
+
+        {/*ScrollView from scrach */}
+        <Sview/>
+
         
 
 
