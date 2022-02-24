@@ -9,6 +9,7 @@ import Animated, {
   withSpring,
   withRepeat,
 } from "react-native-reanimated";
+import ColorPickerMain from "./components/ColorPickerMain";
 import DoubleTap_Like from "./components/DoubleTap_Like";
 import Interpolate from "./components/Interpolate";
 import Interpolate_Colors from "./components/Interpolate_Colors";
@@ -44,36 +45,30 @@ export default function App() {
     // Pan Gesture Handler
 
     <GestureHandlerRootView style={styles.forpan}>
-      <StatusBar style="auto" />
-        {/* <PanGes/> */}
+      <StatusBar style='auto' />
+      {/* <PanGes/> */}
 
-        {/* Interpolate Colors */}
-        {/* <Interpolate_Colors/> */}
+      {/* Interpolate Colors */}
+      {/* <Interpolate_Colors/> */}
 
+      {/*Pinch Gesture Handler*/}
+      {/* <PinchGes/> */}
 
-        {/*Pinch Gesture Handler*/}
-        {/* <PinchGes/> */}
+      {/*DoubleTap like Instagram */}
+      {/* <DoubleTap_Like/> */}
 
-        {/*DoubleTap like Instagram */}
-        {/* <DoubleTap_Like/> */}
+      {/*ScrollView from scrach */}
+      {/* <Sview/> */}
 
-        {/*ScrollView from scrach */}
-        <Sview/>
-
-        
-
-
-        
+      {/* Color Picker */}
+      <ColorPickerMain />
     </GestureHandlerRootView>
-
 
     //interpolate
     // <>
     //  {/* <StatusBar style="dark" /> */}
     //   <Interpolate/>
     //   </>
-
-
   );
 }
 
@@ -94,7 +89,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 50,
   },
-  forpan:{
-    flex:1
-  }
+  forpan: {
+    flex: 1,
+  },
 });
