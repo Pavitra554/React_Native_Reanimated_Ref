@@ -15,6 +15,7 @@ import Interpolate from "./components/Interpolate";
 import Interpolate_Colors from "./components/Interpolate_Colors";
 import PanGes from "./components/PanGes";
 import PinchGes from "./components/PinchGes";
+import ProgressBar from "./components/ProgressBar";
 import Sview from "./components/Sview";
 
 export default function App() {
@@ -61,7 +62,11 @@ export default function App() {
       {/* <Sview/> */}
 
       {/* Color Picker */}
-      <ColorPickerMain />
+      {/* <ColorPickerMain /> */}
+
+      {/* Circular Progress Bar */}
+      <ProgressBar/>
+
     </GestureHandlerRootView>
 
     //interpolate
