@@ -9,6 +9,7 @@ import Animated, {
   withSpring,
   withRepeat,
 } from "react-native-reanimated";
+import ClockLoader from "./components/ClockLoader";
 import ColorPickerMain from "./components/ColorPickerMain";
 import DoubleTap_Like from "./components/DoubleTap_Like";
 import Interpolate from "./components/Interpolate";
@@ -46,7 +47,7 @@ export default function App() {
     // Pan Gesture Handler
 
     <GestureHandlerRootView style={styles.forpan}>
-      <StatusBar style='auto' />
+      <StatusBar style='inverted' />
       {/* <PanGes/> */}
 
       {/* Interpolate Colors */}
@@ -65,7 +66,10 @@ export default function App() {
       {/* <ColorPickerMain /> */}
 
       {/* Circular Progress Bar */}
-      <ProgressBar/>
+      {/* <ProgressBar/> */}
+
+      {/*ClockLoader*/}
+      <ClockLoader/>
 
     </GestureHandlerRootView>
 
