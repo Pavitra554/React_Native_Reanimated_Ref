@@ -14,6 +14,7 @@ import ColorPickerMain from "./components/ColorPickerMain";
 import DoubleTap_Like from "./components/DoubleTap_Like";
 import Interpolate from "./components/Interpolate";
 import Interpolate_Colors from "./components/Interpolate_Colors";
+import LayoutAnimation from "./components/LayoutAnimation";
 import PanGes from "./components/PanGes";
 import PinchGes from "./components/PinchGes";
 import ProgressBar from "./components/ProgressBar";
@@ -69,7 +70,10 @@ export default function App() {
       {/* <ProgressBar/> */}
 
       {/*ClockLoader*/}
-      <ClockLoader/>
+      {/* <ClockLoader/> */}
+
+      {/*Layout Animation */}
+      <LayoutAnimation/>
 
     </GestureHandlerRootView>
 
@@ -79,6 +83,7 @@ export default function App() {
     //   <Interpolate/>
     //   </>
   );
+
 }
 
 const styles = StyleSheet.create({
