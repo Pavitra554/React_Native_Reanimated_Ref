@@ -19,6 +19,7 @@ import PanGes from "./components/PanGes";
 import PinchGes from "./components/PinchGes";
 import ProgressBar from "./components/ProgressBar";
 import Sview from "./components/Sview";
+import SwipeDelete from "./components/SwipeDelete";
 
 export default function App() {
   const progress = useSharedValue(1);
@@ -73,7 +74,10 @@ export default function App() {
       {/* <ClockLoader/> */}
 
       {/*Layout Animation */}
-      <LayoutAnimation/>
+      {/* <LayoutAnimation/> */}
+
+      {/*Swipe To Delete */}
+      <SwipeDelete/>
 
     </GestureHandlerRootView>
 
