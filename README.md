@@ -8,7 +8,7 @@
 
 <hr/>
 
-<p style='display:flex;flex-direction:row; flex-wrap:wrap'>
+<p style='display:flex;flex-direction:row; flex-wrap:wrap; justify-content:center;'>
 <img height='500px' src='./gif/A1.gif'/>
 <img height='500px' src='./gif/A2.gif'/>
 <img height='500px' src='./gif/A3.gif'/>
