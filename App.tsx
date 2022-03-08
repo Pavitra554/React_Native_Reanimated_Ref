@@ -9,18 +9,20 @@ import Animated, {
   withSpring,
   withRepeat,
 } from "react-native-reanimated";
-import Bottomsheet from "./components/Bottomsheet";
-import ClockLoader from "./components/ClockLoader";
-import ColorPickerMain from "./components/ColorPickerMain";
-import DoubleTap_Like from "./components/DoubleTap_Like";
-import Interpolate from "./components/Interpolate";
-import Interpolate_Colors from "./components/Interpolate_Colors";
-import LayoutAnimation from "./components/LayoutAnimation";
-import PanGes from "./components/PanGes";
-import PinchGes from "./components/PinchGes";
-import ProgressBar from "./components/ProgressBar";
-import Sview from "./components/Sview";
-import SwipeDelete from "./components/SwipeDelete";
+import {
+  Bottomsheet,
+  ClockLoader,
+  ColorPickerMain,
+  DoubleTap_Like,
+  Interpolate,
+  Interpolate_Colors,
+  LayoutAnimation,
+  PanGes,
+  PinchGes,
+  ProgressBar,
+  Sview,
+  SwipeDelete,
+} from "./components";
 
 export default function App() {
   const progress = useSharedValue(1);
@@ -66,7 +68,7 @@ export default function App() {
       {/* <Sview/> */}
 
       {/* Color Picker */}
-     {/*  <ColorPickerMain /> */}
+      {/*  <ColorPickerMain /> */}
 
       {/* Circular Progress Bar */}
       {/* <ProgressBar/> */}
@@ -81,8 +83,7 @@ export default function App() {
       {/* <SwipeDelete/> */}
 
       {/* bottonSheet */}
-      <Bottomsheet/>
-
+      <Bottomsheet />
     </GestureHandlerRootView>
 
     //interpolate
@@ -91,7 +92,6 @@ export default function App() {
     //   <Interpolate/>
     //   </>
   );
-
 }
 
 const styles = StyleSheet.create({
