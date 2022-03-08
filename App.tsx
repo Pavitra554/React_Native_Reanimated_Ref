@@ -9,6 +9,7 @@ import Animated, {
   withSpring,
   withRepeat,
 } from "react-native-reanimated";
+import Bottomsheet from "./components/Bottomsheet";
 import ClockLoader from "./components/ClockLoader";
 import ColorPickerMain from "./components/ColorPickerMain";
 import DoubleTap_Like from "./components/DoubleTap_Like";
@@ -65,7 +66,7 @@ export default function App() {
       {/* <Sview/> */}
 
       {/* Color Picker */}
-      {/* <ColorPickerMain /> */}
+     {/*  <ColorPickerMain /> */}
 
       {/* Circular Progress Bar */}
       {/* <ProgressBar/> */}
@@ -77,7 +78,10 @@ export default function App() {
       {/* <LayoutAnimation/> */}
 
       {/*Swipe To Delete */}
-      <SwipeDelete/>
+      {/* <SwipeDelete/> */}
+
+      {/* bottonSheet */}
+      <Bottomsheet/>
 
     </GestureHandlerRootView>
 
