@@ -13,6 +13,10 @@
 <hr/>
 <center>
 <p style='display:flex;flex-direction:row; flex-wrap:wrap; justify-content:center;'>
+<img height='500px' src='./gif/A13.gif'/>
+<img height='500px' src='./gif/A10.gif'/>
+<img height='500px' src='./gif/A12.gif'/>
+<img height='500px' src='./gif/A11.gif'/>
 <img height='500px' src='./gif/A1.gif'/>
 <img height='500px' src='./gif/A2.gif'/>
 <img height='500px' src='./gif/A3.gif'/>
@@ -22,8 +26,5 @@
 <img height='500px' src='./gif/A7.gif'/>
 <img height='500px' src='./gif/A8.gif'/>
 <img height='500px' src='./gif/A9.gif'/>
-<img height='500px' src='./gif/A10.gif'/>
-<img height='500px' src='./gif/A11.gif'/>
-<img height='500px' src='./gif/A12.gif'/>
 </p>
 </center>
